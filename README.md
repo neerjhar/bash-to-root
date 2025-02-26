@@ -76,5 +76,69 @@ Below are some fundamental Linux commands that every user should know:
 | Distributions  | Various commercial versions (AIX, HP-UX, Solaris) | Multiple distributions (Ubuntu, Fedora, CentOS, Arch) |
 | Customizability | Limited due to licensing restrictions | Highly customizable and flexible |
 | Usage          | Mainly used in enterprises and mainframes | Used in personal computers, servers, IoT devices |
-## Conclusion
-Linux is a powerful and flexible operating system that offers various commands for managing files, processes, and networks. Understanding these basics will help users navigate and operate Linux systems efficiently.
+
+# 50 Basic Linux Commands
+
+## 📂 File and Directory Management
+1. `ls` – List files and directories  
+2. `cd` – Change directory  
+3. `pwd` – Print working directory  
+4. `mkdir` – Create a new directory  
+5. `rmdir` – Remove an empty directory  
+6. `rm -r` – Remove a directory and its contents  
+7. `cp` – Copy files and directories  
+8. `mv` – Move or rename files  
+9. `touch` – Create an empty file  
+10. `find` – Search for files in a directory  
+11. `locate` – Find the location of a file  
+12. `stat` – Display detailed information about a file  
+13. `tree` – Show directory structure  
+
+## 📄 File Operations
+14. `cat` – View the contents of a file  
+15. `tac` – View a file in reverse order  
+16. `less` – View large files page by page  
+17. `head` – Show the first 10 lines of a file  
+18. `tail` – Show the last 10 lines of a file  
+19. `grep` – Search for patterns in a file  
+20. `awk` – Pattern scanning and text processing  
+21. `sed` – Stream editor for modifying text  
+22. `diff` – Compare two files line by line  
+23. `sort` – Sort the contents of a file  
+24. `uniq` – Remove duplicate lines from a file  
+25. `wc` – Count lines, words, and characters in a file  
+
+## 🖥️ System Information
+26. `uname -a` – Show system information  
+27. `hostname` – Display or set the hostname  
+28. `uptime` – Show how long the system has been running  
+29. `whoami` – Display the current user  
+30. `id` – Show user and group IDs  
+31. `df -h` – Check disk space usage  
+32. `du -sh` – Show disk usage of a directory  
+33. `free -h` – Show memory usage  
+34. `top` – Display running processes  
+35. `htop` – Interactive process viewer (needs installation)  
+
+## 🔧 Process and User Management
+36. `ps aux` – Show all running processes  
+37. `kill <PID>` – Terminate a process by its ID  
+38. `killall <name>` – Kill all processes by name  
+39. `pkill <name>` – Kill processes by name  
+40. `nice` – Start a process with a given priority  
+41. `renice` – Change the priority of a running process  
+42. `useradd <username>` – Add a new user  
+43. `passwd <username>` – Change user password  
+44. `who` – Show logged-in users  
+45. `w` – Show active users and what they are doing  
+
+## 🔒 Permissions and Ownership
+46. `chmod` – Change file permissions  
+47. `chown` – Change file ownership  
+48. `chgrp` – Change file group ownership  
+
+## 🚀 Networking
+49. `ping <host>` – Test network connectivity  
+50. `curl <URL>` – Fetch data from a URL  
+
+These are fundamental commands for working with Linux. Mastering them will improve your efficiency in the Linux environment! 🚀
