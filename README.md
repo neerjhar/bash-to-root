@@ -138,7 +138,140 @@ Below are some fundamental Linux commands that every user should know:
 48. `chgrp` – Change file group ownership  
 
 ## 🚀 Networking
-49. `ping <host>` – Test network connectivity  
-50. `curl <URL>` – Fetch data from a URL  
+
+## 1. Network Configuration and Status
+
+- **Check IP address:**
+  ```sh
+  ip a
+  ```
+  ```sh
+  ifconfig  # Deprecated but still available
+  ```
+
+- **Check routing table:**
+  ```sh
+  ip r
+  ```
+  ```sh
+  route -n  # Older command
+  ```
+
+- **Check active network connections:**
+  ```sh
+  netstat -tulnp
+  ```
+  ```sh
+  ss -tulnp  # Preferred over netstat
+  ```
+
+## 2. Network Diagnostics
+
+- **Ping a host:**
+  ```sh
+  ping example.com
+  ```
+
+- **Traceroute to a destination:**
+  ```sh
+  traceroute example.com
+  ```
+  ```sh
+  tracepath example.com  # Alternative command
+  ```
+
+- **Check DNS resolution:**
+  ```sh
+  nslookup example.com
+  ```
+  ```sh
+  dig example.com
+  ```
+
+- **Test network connectivity:**
+  ```sh
+  curl -I http://example.com
+  ```
+  ```sh
+  wget --spider http://example.com
+  ```
+
+## 3. Network Interfaces Management
+
+- **Bring an interface up or down:**
+  ```sh
+  ip link set eth0 up
+  ip link set eth0 down
+  ```
+  ```sh
+  ifconfig eth0 up  # Deprecated
+  ifconfig eth0 down
+  ```
+
+- **Restart networking service:**
+  ```sh
+  systemctl restart networking
+  ```
+  ```sh
+  service networking restart
+  ```
+
+## 4. Port and Firewall Management
+
+- **Check open ports:**
+  ```sh
+  netstat -tulnp
+  ```
+  ```sh
+  ss -tulnp
+  ```
+
+- **Manage firewall rules with UFW:**
+  ```sh
+  ufw status
+  ufw allow 22/tcp
+  ufw deny 80/tcp
+  ufw enable
+  ufw disable
+  ```
+
+- **Manage firewall rules with iptables:**
+  ```sh
+  iptables -L
+  iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+  iptables -A INPUT -p tcp --dport 80 -j DROP
+  ```
+
+## 5. Network Monitoring
+
+- **Monitor network traffic:**
+  ```sh
+  tcpdump -i eth0
+  ```
+
+- **Display network statistics:**
+  ```sh
+  ifstat
+  ```
+  ```sh
+  vnstat
+  ```
+
+## 6. File Transfer and Remote Access
+
+- **Securely copy files:**
+  ```sh
+  scp file.txt user@remote:/path/
+  ```
+
+- **Synchronize directories:**
+  ```sh
+  rsync -avz /local/dir user@remote:/remote/dir
+  ```
+
+- **Connect to a remote machine via SSH:**
+  ```sh
+  ssh user@remote
+  ```
 
 These are fundamental commands for working with Linux. Mastering them will improve your efficiency in the Linux environment! 🚀
