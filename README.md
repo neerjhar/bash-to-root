@@ -1,4 +1,4 @@
-# Bash-to-root
+# Bash-to-root 🚀
 
 ## Introduction to Linux
 Linux is an open-source, Unix-like operating system that powers a wide range of devices, from personal computers to servers and embedded systems. It is known for its stability, security, and flexibility.
