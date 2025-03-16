@@ -37,6 +37,14 @@ Popular Linux distributions include:
 1. Shrink an existing Windows partition to free space.
 2. Follow the standard installation steps and select "Install alongside Windows."
 3. Configure the bootloader (GRUB) to manage both operating systems.
+### Choosing a Linux Distribution
+Popular Linux distributions include:
+- **[Ubuntu](https://ubuntu.com/download)** - Beginner-friendly and widely used
+- **[Fedora](https://getfedora.org/)** - Cutting-edge features with stability
+- **[Debian](https://www.debian.org/download)** - Reliable and community-driven
+- **[Arch Linux](https://archlinux.org/download/)** - Highly customizable, for advanced users
+- **[CentOS/Rocky Linux](https://rockylinux.org/download/)** - Enterprise-grade stability
+
 ## Basic Linux Commands
 Below are some fundamental Linux commands that every user should know:
 ### 1. File and Directory Commands:
